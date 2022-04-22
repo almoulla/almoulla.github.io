@@ -53,31 +53,55 @@
 						<section id="content">
 							<p align="justify">
 								My main research concerns the understanding and mitigation of stellar activity. Under
-								the supervision of Dr. Xavier Dumusque, I am part of the ERC-funded project ''Signal
-								COrrection to Reveal other Earths'' (SCORE).
+								the supervision of Dr. Xavier Dumusque, I am part of project ''Signal
+								COrrection to Reveal other Earths'' (SCORE) funded by the European Research Council
+								(ERC).
 							</p>
-							<h3>The Sun as a star</h3>
-							<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo,
-								tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam
-								quam, mollis at magna consectetur non, malesuada quis augue. Morbi tincidunt pretium
-								interdum est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo.
-								Cras vel neque eros. Vestibulum diam.</p>
-							<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt
-								pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque
-								ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna.
-								Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique.</p>
-							<h3>Radial velocities</h3>
-							<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus.
-								Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit
-								in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum
-								metus.</p>
-							<ul>
-								<li>Faucibus orci lobortis ac adipiscing integer.</li>
-								<li>Col accumsan arcu mi aliquet placerat.</li>
-								<li>Lobortis vestibulum ut magna tempor massa nascetur.</li>
-								<li>Blandit massa non blandit tempor interdum.</li>
-								<li>Lacinia mattis arcu nascetur lobortis.</li>
-							</ul>
+							<h3>Sun-as-a-star observations and their quality control</h3>
+							<p align="justify">
+								The HARPS and HARPS-N instruments have obtained continuous, high S/N, high precision
+								radial velocities (RVs) of the Sun. However, without simultaneous meteorological
+								monitoring, these observations will occasionally be influenced by clouds and, in the
+								case of HARPS-N located in La Palma, dust winds from the Sahara called calima. These
+								weather phenomena introduce one-sided outliers in the linear relation expected between
+								the apparent magnitude of the Sun and its airmass, known as the extinction, as it
+								traverses the sky. The extinction slope is also of importance to correct the RVs from
+								differential extinction due to the tilt of the Sun's rotation axis relative to the
+								horizon normal, causing a flux inbalance between the red- and blueshifted hemispheres.
+							</p>
+							<p align="justify" style="text-indent: 5%">
+								As a consequence of the non-gaussian nature of the noise, the method of least-square
+								fitting becomes biased and insufficient. Instead, I perform Markov Chain Monte Carlo
+								(MCMC) analysis to simultaneously model a fore- and background population by exploring
+								the parameter space. Marginalizing over the likelihoods allows for the definition of
+								quality flags on each individual measurement, which are readily available on the ''Data
+								& Analysis Center for Exoplanets'' (DACE) platform.
+							</p>
+							<h3>Radial velocities based on the formation temperature of spectral lines</h3>
+							<p align="justify">
+								Convection in the envelopes of low-mass stars create surface granulation patterns
+								consisting of ascending hot granules and descending cool intergranular lanes. Light
+								emitted from these different regions will contain spectral lines with varying strengths
+								(due to the difference in intensity) and Doppler shifts (due to the convective motion).
+								For unresolved sources, i.e. most stars, the disk-averaged spectral lines will be
+								asymmetrical and have a net blueshift with respect to the stellar restframe.
+							</p>
+							<p align="justify" style="text-indent: 5%">
+								Spectral lines formed at different depths will also be differently affected by the
+								convection, known as the third signature of granulation. In previous efforts to mitigate
+								the impact of stellar activity on RV measurements, several studies have investigated the
+								dependency on a line-by-line (LBL) basis. It has been found that some lines are more
+								strongly correlated with activity signals, and that the signal amplitude decreases as a
+								function of line depth when averaging over certain depth intervals.
+							</p>
+							<p align="justify" style="text-indent: 5%">
+								In my work, I explore a new approach in calculating LBL RVs based on the average
+								formation temperature, obtained from spectral synthesis, of sampled points across
+								individual line profiles. RVs are then computed and averaged on segments of lines
+								divided by binning the range of formation temperatures. By doing so, the aim is to
+								disentangle activity signals originating at different layers, correspond to different
+								temperatures, of the stellar atmosphere.
+							</p>
 						</section>
 
 					</div>
@@ -85,6 +109,8 @@
 
 						<!-- Sidebar -->
 						<section id="sidebar">
+							<a href="images/logotypes/logo_erc.jpg" target="_blank" rel="noopener noreferrer"
+								class="image fit"><img src="images/logotypes/logo_erc.png" alt="" /></a>
 						</section>
 
 					</div>
