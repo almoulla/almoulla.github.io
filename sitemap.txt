@@ -1,9 +1,0 @@
-https://almoulla.github.io
-https://almoulla.github.io/index.html
-https://almoulla.github.io/about.html
-https://almoulla.github.io/research.html
-https://almoulla.github.io/research-publications.html
-https://almoulla.github.io/research-talks.html
-https://almoulla.github.io/research-posters.html
-https://almoulla.github.io/cv.html
-https://almoulla.github.io/contact.html
